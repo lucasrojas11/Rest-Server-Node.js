@@ -4,14 +4,13 @@ const cors = require('cors')
 class Server {
 
   constructor(){
-    this.app = express(); //creamos la aplicacion de express como una propiedad de la clase servidor 
-    this.port = process.env.PORT;
+    this.app = express();  
+    this.port = process.env.PORT || 3000;
     this.usersPath = '/api/users';
 
     //Middlewares
     this.middlewares();
 
-    //Rutas de la aplicacion
     this.routes(); //llamamos a las rutas 
   }
 
