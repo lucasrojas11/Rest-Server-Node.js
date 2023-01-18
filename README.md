@@ -1,2 +1,2 @@
 # Rest Server con Node.js y express
-Recuerde utilizar ``` npm install ```  para reconstruir los modulos de node.js 
+Esta es la segunda version del Rest Server en la que se agregó un CRUD 
