@@ -10,6 +10,7 @@ class Server {
     this.app = express(); //creamos la aplicacion de express como una propiedad de la clase servidor 
     this.port = process.env.PORT;
     this.usersPath = '/api/users';
+    this.authPath  = '/api/auth';
 
     //DB Conection
     this.conectarDB();
@@ -40,8 +41,9 @@ class Server {
 
   routes(){ //definimos las rutas 
     
+    this.app.use(this.authPath, require('../routes/auth.routes'));
+    
     this.app.use(this.usersPath, require('../routes/users.routes'));
-
   }
 
   listen(){
