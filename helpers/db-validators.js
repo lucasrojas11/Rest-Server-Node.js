@@ -47,6 +47,18 @@ const existsProductById = async ( id ) => {
 
 }
 
+//validate colleccion allowed
+const collectionsAllowed = (colleccion = '', collections=[]) => {
+
+    const includ = collections.includes(colleccion);
+    if(!includ) {
+        throw new Error(`The Colleccion: ${ colleccion } not is valid, valid collections: ${collections}}`)
+    }
+
+    return true;
+
+}
+
 
 
 module.exports = {
@@ -54,5 +66,6 @@ module.exports = {
     isValidEmail,
     isValidId,
     existsCategoryById,
-    existsProductById
+    existsProductById,
+    collectionsAllowed
 }
