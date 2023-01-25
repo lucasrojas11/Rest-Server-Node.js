@@ -1,2 +1,2 @@
-# Rest Server con Node.js y express
-Esta es la quinta version del Rest Server en la que se agregaron más endpoints para la búsqueda de los productos, de usuarios y de categorias  
+# Rest Server with Node.js and express
+Rest Server que sirve contenido estatico, puede procesas peticiones POST, PUT, PATCH Y DELETE, procesa la creacion, actualizacion y eliminacion de usuarios, productos y categorias, cuenta con un login integrado con google Sing in. Cuenta con endpoints para la búsqueda de los productos, de usuarios y de categorias, puede procesar y manejar distintos endpoints y distintas rutas para obtencion, creacion, actualizacion y eliminacion de usuarios, productos y categorias y ademas cuenta con MongoDB como base de datos para el guardado de los usuarios(con sus contraseñas, imagenes, etc) y de productos.
